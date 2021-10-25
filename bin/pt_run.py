@@ -17,7 +17,7 @@ try:
 
     for ( card_number, card_name) in cursor:
         #print(card_number + ". " + card_name)
-        deck.append(card_name)
+        deck.append([card_number,card_name])
 
     cursor.close()
 
@@ -32,14 +32,13 @@ else:
     #Close db connection
     cnx.close()
 
-################################################################
+###############################################################################
 #Create a 3 card spread from your deck
 pt_lib.shuffle_cards(deck)
 print("")
 print("3 Card: Past, Present, Future")
 print("=============================")
 print("")
-print("[", deck[0], "][", deck[1], "][", deck[2], "]")
+print(f"[{deck[0][0]}. {deck[0][1]}][{deck[1][0]}. {deck[1][1]}][{deck[2][0]}. {deck[2][1]}]")
 print("")
-
 
