@@ -1,18 +1,17 @@
-#Py_Tarot - Python Reaching to the Collective Unconscious
+# Py_Tarot - Python Reaching to the Collective Unconscious
 
-##Pre-requisites
+## Pre-requisites
 
-* mysql
-* python3
-* python mysql connector
+- mysql
+- python3
+- python mysql connector
 
-##Files
+## Files
 
-* bin/pt_run.py - Main Executable
-* bin/pt_lib.py - Function Library
-* bin/pt.ini - Configuration File including db connection parameters
-* doc/data_dictionary.sql - SQL File to build the db
+- bin/pt_run.py - Main Executable
+- bin/pt_lib.py - Function Library
+- bin/pt.ini - Configuration File including db connection parameters
+- doc/data_dictionary.sql - SQL File to build the db
 
-##Notes:
-
+## Notes:
 
