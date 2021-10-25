@@ -5,10 +5,11 @@ import pt_lib
 #Open Ini-file and read in vars
 ini = pt_lib.read_ini()
 
+#List of cards in the deck.
 deck = []
 try:
     #Open db connection
-    cnx = mysql .connector.connect(user = ini['db_user'], password = ini['db_passwd'],
+    cnx = mysql.connector.connect(user = ini['db_user'], password = ini['db_passwd'],
                                     host = ini['db_host'],
                                     database = ini['db_name'])
     cursor = cnx.cursor()
