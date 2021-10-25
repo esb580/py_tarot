@@ -1,4 +1,4 @@
-# Py_Tarot - Python Reaching to the Collective Unconscious
+## Py_Tarot - Python Reaching the Collective Unconscious
 
 ## Pre-requisites
 
