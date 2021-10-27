@@ -10,6 +10,7 @@
 ## Files
 
 - bin/pt_run.py - Main Executable
+- bin/pt_3card_gui.py - Prototype for 3 Card Visual Spread 
 - bin/pt_lib.py - Function Library
 - bin/pt.ini - Configuration File including db connection parameters
 - doc/data_dictionary.sql - SQL File to build the db
