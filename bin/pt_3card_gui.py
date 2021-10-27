@@ -1,10 +1,27 @@
+from random import *
 from tkinter import *
 from tkinter import ttk
 
+#Path to the pack in use:
+pack = "../img/packs/rwps"
+
+def shuffle_cards():
+    deck = []
+    #Upright or Reversed Indicator
+    ur = randint(0,1)
+    #
+    if ur == 0:
+        upright_or_reversed = "upright" 
+    else:
+        upright_or_reversed = "reversed" 
+
+    for card in range(0,21):
+        pass
+
 def flip_cards():
-    flipped_card1 = PhotoImage(file='../img/packs/rwps/upright/ar00.gif')
-    flipped_card2 = PhotoImage(file='../img/packs/rwps/upright/ar01.gif')
-    flipped_card3 = PhotoImage(file='../img/packs/rwps/upright/ar02.gif')
+    flipped_card1 = PhotoImage(file=pack + '/upright/ar00.gif')
+    flipped_card2 = PhotoImage(file=pack + '/upright/ar01.gif')
+    flipped_card3 = PhotoImage(file=pack + '/upright/ar02.gif')
     card_frame1.configure(image=flipped_card1)
     card_frame1.image = flipped_card1
     card_frame2.configure(image=flipped_card2)
