@@ -1,5 +1,6 @@
 import random
 import time
+from playsound import playsound
 from tkinter import *
 from tkinter import ttk
 
@@ -32,13 +33,19 @@ def shuffle_cards():
         
     #Shuffle Three times
     print("Shuffle 1")
+    playsound('../snd/shuffling-cards-1.wav')
     random.shuffle(deck)
+    print(deck)
     time.sleep(1)
     print("Shuffle 2")
+    playsound('../snd/shuffling-cards-1.wav')
     random.shuffle(deck)
+    print(deck)
     time.sleep(1)
     print("Shuffle 3")
+    playsound('../snd/shuffling-cards-1.wav')
     random.shuffle(deck)
+    print(deck)
     time.sleep(1)
       
 
@@ -46,7 +53,6 @@ def shuffle_cards():
 
 def flip_cards():
     shuffled_deck = shuffle_cards()
-    print(shuffled_deck)
     flipped_card1 = PhotoImage(file=pack + '/' + shuffled_deck[0]['orientation'] + '/' + shuffled_deck[0]['name'])
     flipped_card2 = PhotoImage(file=pack + '/' + shuffled_deck[1]['orientation'] + '/' + shuffled_deck[1]['name'])
     flipped_card3 = PhotoImage(file=pack + '/' + shuffled_deck[2]['orientation'] + '/' + shuffled_deck[2]['name'])
