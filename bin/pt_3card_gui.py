@@ -1,4 +1,5 @@
 import random
+import time
 from tkinter import *
 from tkinter import ttk
 
@@ -28,8 +29,19 @@ def shuffle_cards():
         card['orientation'] = get_orientation()
         deck.append(card)
         card = {}
-
+        
+    #Shuffle Three times
+    print("Shuffle 1")
     random.shuffle(deck)
+    time.sleep(1)
+    print("Shuffle 2")
+    random.shuffle(deck)
+    time.sleep(1)
+    print("Shuffle 3")
+    random.shuffle(deck)
+    time.sleep(1)
+      
+
     return deck
 
 def flip_cards():
