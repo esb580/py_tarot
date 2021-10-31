@@ -26,4 +26,4 @@ Linux Pip/Pipenv/py_tarot Install:
 - pip install [--trusted-host pypi.org --trusted-host files.pythonhosted.org]  --users pipenv 
 - echo "export PATH=/home/a535947/.local/bin:$PATH" >> ~/.bashrc
 - . ~/.bashrc
-- 
+- sudo apt install mysql-community-server
