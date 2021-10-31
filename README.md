@@ -16,4 +16,14 @@
 - doc/data_dictionary.sql - SQL File to build the db
 
 ## Notes:
+MacOS Pip/Pipenv/py_tarot Install:
 
+Linux Pip/Pipenv/py_tarot Install:
+
+- apt update
+- apt upgrade
+- apt install python3-pip
+- pip install [--trusted-host pypi.org --trusted-host files.pythonhosted.org]  --users pipenv 
+- echo "export PATH=/home/a535947/.local/bin:$PATH" >> ~/bashrc
+- . ~/.bashrc
+- 
