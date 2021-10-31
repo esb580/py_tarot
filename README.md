@@ -24,6 +24,6 @@ Linux Pip/Pipenv/py_tarot Install:
 - apt upgrade
 - apt install python3-pip
 - pip install [--trusted-host pypi.org --trusted-host files.pythonhosted.org]  --users pipenv 
-- echo "export PATH=/home/a535947/.local/bin:$PATH" >> ~/bashrc
+- echo "export PATH=/home/a535947/.local/bin:$PATH" >> ~/.bashrc
 - . ~/.bashrc
 - 
