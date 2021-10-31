@@ -1,3 +1,4 @@
+import pt_lib
 import random
 import time
 from playsound import playsound
@@ -47,10 +48,12 @@ def shuffle_cards():
     random.shuffle(deck)
     print(deck)
     time.sleep(1)
-      
 
     return deck
 
+card1_info = []
+card2_info = []
+card3_info = []
 def flip_cards():
     shuffled_deck = shuffle_cards()
     flipped_card1 = PhotoImage(file=pack + '/' + shuffled_deck[0]['orientation'] + '/' + shuffled_deck[0]['name'])
@@ -62,6 +65,12 @@ def flip_cards():
     card_frame2.image = flipped_card2
     card_frame3.configure(image=flipped_card3)
     card_frame3.image = flipped_card3
+    card1_info = pt_lib.get_meaning(shuffled_deck[0]['name'], shuffled_deck[0]['orientation'])
+    card2_info = pt_lib.get_meaning(shuffled_deck[1]['name'], shuffled_deck[1]['orientation']) 
+    card3_info = pt_lib.get_meaning(shuffled_deck[2]['name'], shuffled_deck[2]['orientation'])
+    print(card1_info)
+    print(card2_info)
+    print(card3_info)
 
 root = Tk()
 

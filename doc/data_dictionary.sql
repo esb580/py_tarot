@@ -20,7 +20,7 @@ card_name varchar(20),
 card_arcana char(5),
 card_number char(5),
 card_suit int,
-card_image varchar(7),
+card_image varchar(8),
 card_meaning_upright text,
 card_meaning_reversed text
 );
